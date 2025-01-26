@@ -15,6 +15,15 @@ window.addEventListener("load", () => {
     }, 500); 
 });
 
+const navLinks = document.querySelectorAll(".nav-link");
+
+navLinks.forEach(link => {
+    link.addEventListener("click", function () {
+        navLinks.forEach(nav => nav.classList.remove("active"));
+        this.classList.add("active");
+    });
+});
+
 emailjs.init('ekKGkOkEGo62YgrlD');
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {

@@ -34,6 +34,135 @@
 #about-me {
     padding-top: 5%;
 }
+
 .nav-link.active {
     font-weight: bold;
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+}
+
+.animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.zoom-in {
+    transform: scale(0.8);
+}
+
+.zoom-in.visible {
+    transform: scale(1);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+img {
+    transition: transform 0.3s ease-in-out; 
+}
+
+img:hover {
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out;
+}
+
+.fade-in-left {
+  transform: translateX(-50px);
+  transition: all 1s ease-in-out; 
+}
+
+.fade-in-right {
+  transform: translateX(50px);
+  transition: all 1s ease-in-out; 
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1a73e8, #87ceeb);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow: hidden;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.fan {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.fan .blade {
+    position: absolute;
+    width: 60%;
+    height: 10%;
+    background: #0dcaf0;
+    border-radius: 5px;
+    transform-origin: center center;
+}
+
+.blade1 {
+    transform: rotate(0deg);
+}
+
+.blade2 {
+    transform: rotate(90deg);
+}
+
+.blade3 {
+    transform: rotate(180deg);
+}
+
+.blade4 {
+    transform: rotate(270deg);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    animation: fade 1.5s infinite;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
 }

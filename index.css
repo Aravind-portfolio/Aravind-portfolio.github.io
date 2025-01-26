@@ -13,6 +13,14 @@
     z-index: 1000;
 }
 
+.nav-link:not(.active):hover {
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    text-decoration: none;
+}
+
 .hero-section {
     background-color: #f8f9fa;
     padding: 100px 0;

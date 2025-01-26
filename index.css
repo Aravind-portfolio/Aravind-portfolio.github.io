@@ -32,6 +32,9 @@
     height: 100%;
 }
 
+#about-me {
+    padding-top: 5%;
+}
 .nav-link.active {
     font-weight: bold;
 }

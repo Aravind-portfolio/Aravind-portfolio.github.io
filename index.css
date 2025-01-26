@@ -1,0 +1,37 @@
+.progress {
+    border-radius: 50px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    border-radius: 50px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+    height: 100%;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}

@@ -134,8 +134,8 @@
     <section id="projects" class="py-5">
         <div class="container">
             <h2 class="text-center">My Projects</h2>
-            <div class="row animate zoom-in">
-                <div class="col-md-4 mb-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 animate zoom-in">
                     <div class="card-md-4">
                         <img src="https://www.foodiesfeed.com/wp-content/uploads/2023/06/burger-with-melted-cheese.jpg" class="card-img-top" alt="Project 1" style="height: 35vh;">
                         <div class="card-body">
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 animate zoom-in">
                     <div class="card-md-4">
                         <img src="https://www.searchenginejournal.com/wp-content/uploads/2021/10/responsive-web-design-1-61f01c4b64c5f-sej.png" class="card-img-top" alt="Project 2" style="height: 35vh;">
                         <div class="card-body">
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 animate zoom-in">
                     <div class="card-md-4">
                         <img src="https://st.depositphotos.com/1001877/3814/i/450/depositphotos_38143799-stock-photo-e-commerce-shopping-cart-with.jpg" class="card-img-top" alt="Project 3" style="height: 35vh;">
                         <div class="card-body">
@@ -172,8 +172,8 @@
                     </div>
                 </div>
             </div>
-            <div class="row animate zoom-in">
-                <div class="col-md-4 mb-4">
+            <div class="row">
+                <div class="col-md-4 mb-4 animate zoom-in">
                     <div class="card-md-4">
                         <img src="https://cdn.textstudio.com/output/sample/normal/1/2/3/5/guess-logo-73-5321.png" class="card-img-top" alt="Project 1" style="height: 35vh;">
                         <div class="card-body">
@@ -185,7 +185,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 animate zoom-in">
                     <div class="card-md-4">
                         <img src="https://miro.medium.com/v2/resize:fit:700/1*yDgVdq8--I5pUyGodlzswg.jpeg" class="card-img-top" alt="Project 2" style="height: 35vh;">
                         <div class="card-body">
@@ -197,7 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-4 animate zoom-in">
                     <div class="card-md-4">
                         <img src="https://t4.ftcdn.net/jpg/01/77/07/19/360_F_177071998_5KelnM7xIHS74mDoIgJMsx0qYMcbyAEt.jpg" class="card-img-top" alt="Project 3" style="height: 35vh;">
                         <div class="card-body">
@@ -220,18 +220,19 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="name" class="form-label">Full Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Full Name">
+                        <input type="text" class="form-control" id="name" placeholder="Your Full Name" required>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="email" class="form-label">Email Address</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
                     </div>
                 </div>
                 <div class="mb-3">
                     <label for="message" class="form-label">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
+                <button type="button" id="clear_response" class="btn btn-secondary">Clear Response</button>
             </form>
             <p id="response-message"></p>
         </div>

@@ -54,3 +54,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
     document.getElementById('contact-form').reset();
 });
+
+document.getElementById('clear_response').addEventListener('click', function() {
+    document.getElementById('contact-form').reset()  
+});

@@ -8,12 +8,12 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll('.animate').forEach(element => observer.observe(element));
 
 const preloader = document.getElementById("preloader");
-window.addEventListener("load", () => {
-    preloader.style.opacity = "0";
-    setTimeout(() => {
-        preloader.style.display = "none";
-    }, 500); 
-});
+// window.addEventListener("load", () => {
+//     preloader.style.opacity = "0";
+//     setTimeout(() => {
+//         preloader.style.display = "none";
+//     }, 500); 
+// });
 
 const navLinks = document.querySelectorAll(".nav-link");
 

@@ -178,3 +178,46 @@ img:hover {
         opacity: 1;
     }
 }
+
+#backToTop {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    visibility: hidden;
+}
+
+#backToTop:hover {
+    background-color: #555;
+}
+
+#backToTop i {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #backToTop {
+        bottom: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
+  

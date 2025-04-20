@@ -58,3 +58,19 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 document.getElementById('clear_response').addEventListener('click', function() {
     document.getElementById('contact-form').reset()  
 });
+
+// Show/hide button on scroll
+window.onscroll = function () {
+    const btn = document.getElementById("backToTop");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.visibility = "visible";
+    } else {
+        btn.style.visibility = "hidden";
+    }   
+};
+  
+// Scroll to top on click
+document.getElementById("backToTop").addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+  
